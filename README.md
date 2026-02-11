@@ -6,7 +6,7 @@ A streamlined web application to manage a personal book collection. This project
 
 The application uses a MySQL database named **Library**. Use the following script to set up your environment:
 
-sql
+
 CREATE DATABASE IF NOT EXISTS Library;
 USE Library;
 

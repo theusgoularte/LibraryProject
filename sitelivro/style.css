@@ -1,0 +1,44 @@
+:root {
+    --bg: #0f172a; --card: #1e293b; --text: #f8fafc;
+    --dim: #94a3b8; --prim: #6366f1; --red: #ef4444;
+}
+
+body {
+    font-family: sans-serif; background: var(--bg); color: var(--text);
+    display: flex; justify-content: center; padding: 40px 20px; margin: 0;
+}
+
+.container {
+    background: var(--card); width: 100%; max-width: 420px; /* Card mais estreito */
+    padding: 24px; border-radius: 12px; box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+}
+
+h1 { text-align: center; font-size: 1.4rem; margin-top: 0; }
+
+.input-group { margin-bottom: 12px; }
+
+label { display: block; font-size: 0.8rem; color: var(--dim); margin-bottom: 4px; }
+
+input, select {
+    width: 100%; padding: 10px; background: #334155; border: 1px solid #475569;
+    border-radius: 6px; color: #fff; box-sizing: border-box; font-size: 0.9rem;
+}
+
+button { 
+    cursor: pointer; border: none; border-radius: 6px; 
+    font-weight: 600; transition: 0.2s; 
+}
+
+.btn-save { width: 100%; padding: 12px; background: var(--prim); color: #fff; margin-top: 8px; }
+.btn-save:hover { opacity: 0.9; }
+
+.btn-navbar { width: 100%; padding: 10px; background: transparent; border: 1px solid #475569; color: var(--dim); margin-top: 10px; }
+
+.btn-back { background: #334155; color: #fff; padding: 6px 12px; margin-bottom: 15px; font-size: 0.8rem; }
+
+table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+th { text-align: left; color: var(--dim); padding: 8px; border-bottom: 2px solid #334155; }
+td { padding: 8px; border-bottom: 1px solid #334155; }
+
+.tag { background: #334155; padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; }
+.btn-del { color: var(--red); background: none; font-size: 0.8rem; }

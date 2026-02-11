@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Collection</h1>
+        <button class="btn-back" onclick="window.location.href='main.html'">Back to Add Book</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Status</th>
+                    <th>Rate</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="libraryList"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+    <script>window.onload = fetchBooks;</script>
+</body>
+</html>

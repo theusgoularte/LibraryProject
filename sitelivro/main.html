@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Add New Book</h1>
+        <form id="bookForm">
+            <div class="input-group">
+                <label>Title</label>
+                <input type="text" id="title" placeholder="e.g. The Hobbit" required>
+            </div>
+            <div class="input-group">
+                <label>Author</label>
+                <input type="text" id="author" placeholder="e.g. J.R.R. Tolkien" required>
+            </div>
+            <div class="input-group">
+                <label>Status</label>
+                <select id="status">
+                    <option value="Reading">Reading</option>
+                    <option value="Completed">Completed</option>
+                    <option value="Dropped">Dropped</option>
+                </select>
+            </div>
+            <div id="rateContainer" style="display: none;" class="input-group">
+                <label>Rating (1-10)</label>
+                <select id="rate">
+                    <option value="0">Not Rated</option>
+                    <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                    <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                    <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <button type="submit" class="btn-save">Save to Collection</button>
+        </form>
+        <button class="btn-navbar" onclick="window.location.href='library.html'">View My Library</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
